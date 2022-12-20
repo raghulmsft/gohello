@@ -6,10 +6,10 @@ name: testworkflow100
     workflow_dispatch: {}
 env:
     ACR_RESOURCE_GROUP: projectgalaxy
-    AZURE_CONTAINER_REGISTRY: acrworkflow1671488764130
+    AZURE_CONTAINER_REGISTRY: acrworkflow1671557116382
     CLUSTER_NAME: galaxy-dev-cluster
     CLUSTER_RESOURCE_GROUP: projectgalaxy
-    CONTAINER_NAME: image-workflow-1671488764130
+    CONTAINER_NAME: image-workflow-1671557116382
     DEPLOYMENT_MANIFEST_PATH: |
         ./manifests/helloweb-deployment.yaml
         ./manifests/helloweb-service-load-balancer.yaml
@@ -56,4 +56,4 @@ jobs:
                 action: deploy
                 images: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
                 manifests: ${{ env.DEPLOYMENT_MANIFEST_PATH }}
-                namespace: namespace-workflow-1671488764130
+                namespace: namespace-workflow-1671557116382
