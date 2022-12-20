@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: acrworkflow1671488764130.azurecr.io/image-workflow-1671488764130
+        image: acrworkflow1671557116382.azurecr.io/image-workflow-1671557116382
         ports:
         - containerPort: 8080
         resources:
